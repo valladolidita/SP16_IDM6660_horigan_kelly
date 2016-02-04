@@ -1,0 +1,101 @@
+body {
+	background-color: white;
+	margin:0;
+	padding:0;
+}
+
+#wrapper {
+	background-color: #FFF;
+	margin:20px auto;
+	padding:0;
+	width:80%;
+	font-family: 'Droid Serif', serif;
+	font-weight: 400;
+}
+
+.column {
+	width:27.33333333%;
+	color: black;
+	font-size: 1em;
+	margin:1.5%;
+	padding:1.5%;
+	float:left;
+}
+
+h1 span:first-of-type {
+	background-color: orange;
+}
+
+p span:first-of-type {
+	color: orange;
+	background-color: #f9f9f9;
+}
+
+/* CLEARING FIXES
+=================================*/
+.clearfix:before, .clearfix:after { content: "\0020"; display: block; height: 0; overflow: hidden; }  
+.clearfix:after { clear: both; }  
+.clearfix { zoom: 1; } 
+
+@media screen and (max-width: 960px) {
+	
+	#wrapper {
+		padding:1%;
+		font-family: 'Droid Serif', serif;
+		font-weight: 400;
+		font-style: italic;
+	}
+
+	.column {
+		float: none;
+		width:94%;
+	}
+
+	.column h1 {
+		font-size: 1em;
+	}
+}
+
+@media screen and (max-width:400px) {
+	#wrapper {
+		width:96%;
+		margin:0;
+		padding:2%;
+		font-family: 'Exo', sans-serif;
+		font-weight: 100;
+		font-style: normal;
+
+	}
+
+	.column {
+		/* margin:0; */
+		font-size: 1.5em;
+		color: #333;
+	}
+
+	.column h1 {
+		font-size: 1em;
+	}
+}
+
+@media screen and (max-width: 960px) {
+	h1 span:first-of-type {
+		background-color: #15c6b4;
+	}
+
+	p span:first-of-type {
+		background-color: #f9f9f9;
+		color: #15c6b4;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	h1 span:first-of-type {
+		background-color: #b1e059;
+	}
+
+	p span:first-of-type {
+		background-color: #f9f9f9;
+		color: #b1e059;
+	}
+}
