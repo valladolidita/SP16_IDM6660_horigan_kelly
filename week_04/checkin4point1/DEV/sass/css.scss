@@ -1,0 +1,8 @@
+/* Terminal command to add css.scss "sass" to css.css: 
+sass DEV/sass/css.scss PUBLIC/css/css.css or sass (to manually save changes) --watch DEV/sass/css.scss:PUBLIC/css/css.css (automated saves to watch a single file) or sass --watch DEV/sass:PUBLIC/css (automated saves to watch directory) */
+
+@import "mobile";
+@import "phablet";
+@import "tablet";
+@import "labtop";
+@import "desktop";

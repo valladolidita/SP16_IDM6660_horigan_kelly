@@ -1,0 +1,12 @@
+/* Tablet */
+
+@media screen and (min-width: 640px) {
+	body {
+		background-color: yellow;
+	}
+
+	h1, h2 {
+		font-size: 8em;
+		line-height: 1em;
+	}
+}

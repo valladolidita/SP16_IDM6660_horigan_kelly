@@ -1,0 +1,12 @@
+/* Phablet */
+
+@media screen and (min-width: 480px) {
+	body {
+		background-color: orange;
+	}
+
+	h1, h2 {
+		font-size: 4em;
+		line-height: 1em;
+	}
+}
