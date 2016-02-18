@@ -94,7 +94,7 @@ header nav {
 		width: 33%;
 	}
 
-	header nav li h1 span:first-of-type {
+	header nav li span:first-of-type {
 		font-weight: 400;
 	}
 
@@ -118,6 +118,6 @@ section {
 		text-align: center;
 		padding: 1%;
 		background-color: #fff;
-		border-bottom: 2.13em solid #adafb1;
+		margin-bottom: 2.13em;
 	}
 
