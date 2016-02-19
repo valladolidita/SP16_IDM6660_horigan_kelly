@@ -59,7 +59,6 @@ header {
 }
 
 /* HEADER NAV */
-
 header nav {
 		float: left;
 		width: 100%;
@@ -95,7 +94,7 @@ header nav {
 	}
 
 	header nav li span:first-of-type {
-		font-weight: 400;
+		font-weight: 900;
 	}
 
 
@@ -119,5 +118,6 @@ section {
 		padding: 1%;
 		background-color: #fff;
 		margin-bottom: 2.13em;
+		/* border-bottom: 2.13em solid #adafb1;*/
 	}
 
