@@ -15,12 +15,12 @@ html {
 
 /* FONT STYLES */
 html {
-	font: normal 100% 'Raleway', sans-serif;
+	font: normal 100% 'Raleway', serif;
 	line-height: 1.125em; 
 }
 
 h1, h2, h3, h4, h5, h6, li {
-	font-family: 'EB Garamond', serif;
+	font-family: 'Raleway', serif;
 	text-transform: uppercase;
 }
 
@@ -32,9 +32,10 @@ li {
 /* GLOBAL */
 body {
 	width: 100%;
-	padding: auto;
+	min-width: 230px; 
+	padding: 0;
 	/* background: #adafb1;*/
-	background: repeating-linear-gradient(55deg, #606dbc, #606dbc 17px, #465298 4px, #465298 22px);
+	/* background: repeating-linear-gradient(55deg, #606dbc, #606dbc 17px, #465298 4px, #465298 22px);*/
 }
 
 a {
@@ -51,6 +52,11 @@ ul {
 	list-style-type: none;
 }
 
+img {
+    width: 100%;
+    height: auto;
+}
+
 /* HEADER */
 header {
 	height: 5em;
@@ -64,47 +70,52 @@ header nav {
 		width: 100%;
 	}
 
-	header nav ul {
+header nav ul {
 		padding: 0;
 		margin-bottom: 8%;
 		line-height: 1.45em;
 	}
 
-	header nav li {
+header nav li {
 		text-align: center;
 		padding: 1% 0;
-		background-color: #fff;
 	}
 
-	header nav li:nth-of-type(1) {
+header nav li:nth-of-type(1) {
 		/* clear: right;*/
 		float: left;
 		width: 33%;
 	}
 
-	header nav li:nth-child(2) {
+header nav li:nth-child(2) {
 		/* clear: left;*/
 		float: left;
 		width: 33%;
 	}
 
-	header nav li:nth-child(3) {
+header nav li:nth-child(3) {
 		float: right;
 		width: 33%;
 	}
 
-	header nav li span:first-of-type {
+header nav li span:first-of-type {
 		font-weight: 900;
 	}
 
 
 /* BODY */
+section > nav > li > a {
+	display: block; 
+	padding: 0 1% 1% 1%; 
+	
+}
+
 section {
 	margin: 5%;
 }
 	section nav {
 		width: 100%;
-		padding: auto;
+		padding-top: 0;
 	}
 
 	section nav ul {
@@ -115,9 +126,63 @@ section {
 
 	section nav li {
 		text-align: center;
+		font-weight: 600;
 		padding: 1%;
-		background-color: #fff;
-		margin-bottom: 2.13em;
+		background: #606dbc;
+		margin-bottom: 2em;
 		/* border-bottom: 2.13em solid #adafb1;*/
 	}
 
+	#wrapper {
+		/* width:95%;*/
+		margin:0;
+		padding:5%;
+	}
+
+	.column {
+		background-color:#FFF;
+		margin:0;
+		font-size: 1.5em;
+		color: #333;
+	}
+
+	.column h1 {
+		font-size: .85em;
+		text-align: center;
+		text-transform: uppercase;
+		color: black;
+		margin: 2em 0;
+	}
+
+	.column h2 {
+		font-size: .75em;
+		text-align: Left;
+		text-transform: capitalize;
+		color: black;
+		margin-bottom: .25em;
+	}
+
+	.column h2 span{
+		text-align: Left;
+		text-transform: uppercase;
+		font-weight: 200;
+		color: black;
+	}
+
+	.column p{
+		text-align: Left;
+		font-weight: 200;
+		font-size: .75em;
+		line-height: 1.35em;
+		margin-bottom: 2em;
+	}
+	
+footer {
+	background: repeating-linear-gradient(55deg, #606dbc, #606dbc 17px, #465298 4px, #465298 22px);
+	padding: 5%;
+	text-align: center;
+}
+
+footer nav li{
+	display: inline;
+}
