@@ -34,8 +34,6 @@ body {
 	width: 100%;
 	min-width: 230px; 
 	padding: 0;
-	/* background: #adafb1;*/
-	/* background: repeating-linear-gradient(55deg, #606dbc, #606dbc 17px, #465298 4px, #465298 22px);*/
 }
 
 a {
@@ -111,7 +109,8 @@ section > nav > li > a {
 }
 
 section {
-	margin: 5%;
+	margin: 0 5%;
+	padding: 0;
 }
 	section nav {
 		width: 100%;
@@ -119,7 +118,7 @@ section {
 	}
 
 	section nav ul {
-		padding: 8% 0;
+		padding: 0;
 		margin-bottom: 8%;
 		line-height: 3em;
 	}
@@ -130,13 +129,18 @@ section {
 		padding: 1%;
 		background: #606dbc;
 		margin-bottom: 2em;
-		/* border-bottom: 2.13em solid #adafb1;*/
 	}
 
 	#wrapper {
-		/* width:95%;*/
 		margin:0;
-		padding:5%;
+		padding: 2% 5%;
+	}
+
+	#wrapper h1 {
+		font-size: 1.5em;
+		text-align: center;
+		margin-top: 7%;
+		margin-bottom: 5%;
 	}
 
 	.column {
@@ -151,7 +155,7 @@ section {
 		text-align: center;
 		text-transform: uppercase;
 		color: black;
-		margin: 2em 0;
+		margin: 1em 0;
 	}
 
 	.column h2 {
@@ -179,10 +183,24 @@ section {
 	
 footer {
 	background: repeating-linear-gradient(55deg, #606dbc, #606dbc 17px, #465298 4px, #465298 22px);
-	padding: 5%;
+	height: 10em;
+	padding: 12% 5%;
 	text-align: center;
 }
 
 footer nav li{
 	display: inline;
+	font-size: 1.25em;
+	line-height: 1em;
+	font-weight: 400;
+	padding: 19% 8%;
+	margin-bottom: 12%;
+	margin-top: 5%;
+}
+
+footer p {
+	font-size: .75em;
+	line-height: 2em;
+	font-weight: 500;
+	margin-top: 8%;
 }

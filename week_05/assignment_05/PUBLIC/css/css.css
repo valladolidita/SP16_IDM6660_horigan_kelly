@@ -28,9 +28,7 @@ li {
 body {
   width: 100%;
   min-width: 230px;
-  padding: 0;
-  /* background: #adafb1;*/
-  /* background: repeating-linear-gradient(55deg, #606dbc, #606dbc 17px, #465298 4px, #465298 22px);*/ }
+  padding: 0; }
 
 a {
   text-decoration: none;
@@ -90,14 +88,15 @@ section > nav > li > a {
   padding: 0 1% 1% 1%; }
 
 section {
-  margin: 5%; }
+  margin: 0 5%;
+  padding: 0; }
 
 section nav {
   width: 100%;
   padding-top: 0; }
 
 section nav ul {
-  padding: 8% 0;
+  padding: 0;
   margin-bottom: 8%;
   line-height: 3em; }
 
@@ -106,13 +105,17 @@ section nav li {
   font-weight: 600;
   padding: 1%;
   background: #606dbc;
-  margin-bottom: 2em;
-  /* border-bottom: 2.13em solid #adafb1;*/ }
+  margin-bottom: 2em; }
 
 #wrapper {
-  /* width:95%;*/
   margin: 0;
-  padding: 5%; }
+  padding: 2% 5%; }
+
+#wrapper h1 {
+  font-size: 1.5em;
+  text-align: center;
+  margin-top: 7%;
+  margin-bottom: 5%; }
 
 .column {
   background-color: #FFF;
@@ -125,7 +128,7 @@ section nav li {
   text-align: center;
   text-transform: uppercase;
   color: black;
-  margin: 2em 0; }
+  margin: 1em 0; }
 
 .column h2 {
   font-size: .75em;
@@ -149,10 +152,105 @@ section nav li {
 
 footer {
   background: repeating-linear-gradient(55deg, #606dbc, #606dbc 17px, #465298 4px, #465298 22px);
-  padding: 5%;
+  height: 10em;
+  padding: 12% 5%;
   text-align: center; }
 
 footer nav li {
-  display: inline; }
+  display: inline;
+  font-size: 1.25em;
+  line-height: 1em;
+  font-weight: 400;
+  padding: 19% 8%;
+  margin-bottom: 12%;
+  margin-top: 5%; }
+
+footer p {
+  font-size: .75em;
+  line-height: 2em;
+  font-weight: 500;
+  margin-top: 8%; }
+
+@media screen and (min-width: 500px) {
+  footer {
+    padding: 8%; }
+
+  footer p {
+    margin-top: 5%; } }
+/* CLEARING FIXES
+=================================*/
+.clearfix:before, .clearfix:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden; }
+
+.clearfix:after {
+  clear: both; }
+
+.clearfix {
+  zoom: 1; }
+
+@media screen and (min-width: 712px) {
+  header {
+    height: 3em;
+    background-color: white;
+    padding: 1.5em 0 0 0; }
+
+  header nav ul {
+    padding: 0;
+    margin-bottom: 0; }
+
+  section {
+    margin: 0 1%;
+    text-align: center; }
+
+  section nav {
+    width: 100%; }
+
+  section nav li {
+    display: inline;
+    padding: 0;
+    margin: 0; }
+
+  section nav li:nth-child(1) {
+    clear: left;
+    float: left;
+    width: 31%; }
+
+  section nav li:nth-child(2) {
+    clear: left;
+    /*	float: left; */
+    width: 31%; }
+
+  section nav li:nth-child(3) {
+    clear: right;
+    float: right;
+    width: 31%; }
+
+  section nav ul {
+    margin-bottom: 0; }
+
+  #wrapper {
+    padding: 1%; }
+
+  #wrapper h1 {
+    text-align: center;
+    width: 95%;
+    margin-top: 4%;
+    margin-bottom: 2%;
+    font-size: 1.75em; }
+
+  .column {
+    float: left;
+    width: 25%;
+    padding: 2%; }
+
+  footer {
+    clear: both;
+    padding: 4%; }
+
+  footer p {
+    margin-top: 1%; } }
 
 /*# sourceMappingURL=css.css.map */
