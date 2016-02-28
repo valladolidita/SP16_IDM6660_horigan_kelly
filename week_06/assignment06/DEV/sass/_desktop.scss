@@ -1,0 +1,99 @@
+/* CLEARING FIXES
+=================================*/
+.clearfix:before, .clearfix:after { content: "\0020"; display: block; height: 0; overflow: hidden; }  
+.clearfix:after { clear: both; }  
+.clearfix { zoom: 1; } 
+
+@media screen and (min-width: 712px) {
+
+header {
+	height: 3em;
+	background-color: white;
+	padding: 1.5em 0 0 0;
+}
+
+header nav ul {
+		padding: 0;
+		margin-bottom: 0;
+}
+
+section {
+	margin: 0 1%;
+	text-align: center;
+}
+
+section nav {
+	width: 100%;
+}
+
+// START CHANGES BY BOB
+//
+//
+//
+
+section nav li {
+	// display: inline;
+	display: block;
+	padding: 0; 
+	margin: 0;
+	width: 31%;
+	float:left;
+}
+
+// section nav li:nth-child(1) {
+// 	clear: left;
+// 	float: left;
+// 	width: 31%;
+// }
+
+section nav li:nth-child(2) {
+	// clear: left;
+	// float: left; 
+	// width: 31%;
+	margin-left: 3.5%;
+	margin-right: 3.5%;
+}
+
+// section nav li:nth-child(3) {
+// 	clear: right;
+// 	float: right;
+// 	width: 31%;
+// }
+
+//
+//
+//
+//
+//End Changes By Bob
+
+section nav ul {
+		margin-bottom: 0;
+}
+
+#wrapper {
+	padding:1%;
+}
+
+#wrapper h1{
+	text-align: center;
+	width: 95%;
+	margin-top: 4%;
+	margin-bottom: 2%;
+	font-size: 1.75em;
+}
+
+.column {
+	float: left;
+	width:25%;
+	padding: 2%;
+}
+
+footer {
+	clear: both;
+	padding: 4%;
+}
+
+footer p {
+	margin-top: 1%;
+} 
+}
