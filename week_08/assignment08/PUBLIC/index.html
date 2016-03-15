@@ -12,39 +12,25 @@
 
 	<body>
 
-	<!--	<header class="container">
-		  <h1><span>Festival</span><br><span> Internacional</span><span> 2016</span></h1>
-		  <ul>
-		    <li class="dropdown">
-		      <input type="checkbox"/>
-		      <a href="#" data-toggle="dropdown">Menu</a>
-		      <ul class="dropdown-menu">
-			        <li><a href="#">About</a></li>
-			        <li><a href="#">Purchase a Ticket</a></li>
-			        <li><a href="#">Event</a></li>
-			        <li><a href="#">Get Involved</a></li>
-			        <li><a href="#">Participants</a></li>
-			       	<li><a href="#">Contact</a></li>
-		      </ul>
-		    </li>
-		  </ul>
-	</header>-->
-
 	<header>
 			<h1><span><font color="#f26422">f</font><font color="#da1f26">e</font><font color="#ed1847">s</font><font color="#bd1f47">t</font><font color="#0096c4">i</font><font color="#00a2a5">v</font><font color="#00ab66">a</font><font color="#68bd45">l</font></span><br><span> Internacional</span><span> 2016</span></h1>
 		</header>
 
 		<section>
-				<nav class="clearfix">
+		<nav class="clearfix">
+			<ul>
+				<li><a href="#">Menu<div id="down-triangle"></div></a>
 					<ul>
-						<li><a href="#" data-scrollto="about">About</a></li>
-						<li><a href="#" data-scrollto="purchaseticket">Purchase a Ticket</a></li>
-						<li><a href="#" data-scrollto="schedule">Event</a></li>
-						<li><a href="#" data-scrollto="getinvolved">Get Involved</a></li>
-						<li><a href="#" data-scrollto="participants">Participants</a></li>
-						<li><a href="#" data-scrollto="contact">Contact</a></li>
+						<li><a href="#about">About</a></li>
+						<li><a href="#purchaseticket">Purchase a Ticket</a></li>
+						<li><a href="#schedule">Event</a></li>
+						<li><a href="#getinvolved">Get Involved</a></li>
+						<li><a href="#participants">Participants</a></li>
+						<li><a href="#contact">Contact</a></li>
 					</ul>
-				</nav>
+				</li>
+			</ul>
+		</nav>
 		</section>
 
 		<div id="about" class="clearfix">
@@ -54,9 +40,9 @@
 				<p><span>Vivamus auctor</span>, purus ultricies varius pulvinar, eget mattis neque elit sed metus. Vestibulum elit ipsum, egestas sodales dolor.</p>
 		</div>
 
-		<!-- <div class="backgroundwidth" id="image1">
+		<div class="backgroundwidth" id="image1">
 				<img src="images/illustration1.jpg" alt="About the Festival Internacional 2016">
-		</div> -->
+		</div>
 		</div>
 
 
@@ -244,49 +230,30 @@
 			</div>
 		</div>
 
-		<footer>
+<!-- 			<footer id="contact">
+
 			<h2>Connect with Us</h2>
-			<nav>
+		<div class="column">
+			<nav id="connectnav">
 				<ul>
 					<li><h3>Contact Info</h3></li>
 					<li>Asociaci&#243;n de C&#243;nyuges de los Diplom&#225;ticos Acreditados en Colombia</li>
 					<li><a href="mailto:kellyhorigan@gmail.com">acdac.correo@gmail.com</a></li>
 				</ul>
 			</nav>
+		<div>
 
-			<nav>
+			<nav id="sharenav">
 				<h3>Share This Page</h3>
+			<div class="column">
 				<ul>
 					<li><a href="http://www.facebook.com"><i class="fa fa-facebook fa-2x" title="Share this on Facebook"></i></li>
 					<li><a href="http://www.twitter.com"><i class="fa fa-twitter fa-2x" title="Share this on Twitter"></i></li>
 				</ul>
-			</nav>
+			<div>
+			</nav> -->
+
 		</footer>
-
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-			<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
-			<script type="text/javascript" src="js/min/scripts-min.js"></script>
-			<script type="text/javascript">
-				var open_nav = function(el) {
-					if (!$(el).hasClass('active')) {
-						$('body').addClass('nav-open');
-						$(el).addClass('active');
-					} else {
-						$('body').removeClass('nav-open');
-						$(el).removeClass('active');
-					}
-				}
-			</script>
-			<script type="text/javascript">
-				var faqtoggle = function(el) {
-					$(el).siblings('.answer').toggleClass('expanded');
-					$(el).toggleClass('active');
-				}
-
-				$('a', '.answer').focus(function() {
-					$(this).parent().parent().addClass('expanded');
-				});
-	</script>
  
 	</body>
 </html>
