@@ -93,7 +93,7 @@ nav {
 	min-width: 100%;
 	background-color: #25064D;
 	position: fixed;
-	top: 100px;
+	top: 80px;
   	left: 0;
   	right: 0;
 }
@@ -192,19 +192,18 @@ nav ul ul li a:hover {
 
 /* About */
 #about {
-	background: #ED1847;
-/* 	background-image: url("images/illustration1.jpg"); */
-	background-repeat: repeat-x;
+	background: #ED1847 url("../images/aboutbackgroundimage.jpg") 50% 0%/cover repeat-x;
 	padding: 15% 5%;
 	line-height: 1.75em;
 	font-size: .85em;
 	text-align: center;
 	color: white;
-	z-index: -1;
+	z-index: 1;
+	margin-top: 130px;
 }
 
 #about h1{ 
-	color: #A61847;
+	color: white/*#A61847*/;
 	padding: 0 0 7% 0;
 }
 
@@ -218,7 +217,7 @@ nav ul ul li a:hover {
 
 /* Purchase Ticket*/
 #purchaseticket {
-	background-color: orange;
+ 	background: orange url("../images/purchaseticketbackgroundpattern.jpg") 50% 0%/cover repeat-x;
 	padding: 15% 5%;
 	line-height: 1.75em;
 	font-size: .85em;
@@ -239,8 +238,9 @@ nav ul ul li a:hover {
 	line-height: 1.75em;
 }
 
-#purchaseticket li:nth-child(5) {
-	background-color: #F26422;
+#purchaseticket li:nth-child(4) {
+	background-color: #F26422; 
+/*	background-image: linear-gradient(#DA1F26, #F26422); */
 	height: 5em;
 	margin-top: 2em;
 }
@@ -255,7 +255,8 @@ nav ul ul li a:hover {
 
 /* Schedule */
 #schedule {
-	background-color: #25064D;
+/* 	background-color: #00AB66; */
+	background: url("../images/schedulebackgroundpattern.jpg") 50% 0%/cover repeat-x;
 	padding: 15% 5%;
 	line-height: 1.75em;
 	font-size: .85em;
@@ -263,9 +264,9 @@ nav ul ul li a:hover {
 }
 
 #schedule h2{
-	padding: 0% 0 7% 0;
+	padding: 7% 0 7% 0;
 	text-align: left;
-	color: #9d69b7;
+	color: /*#5cda28*/ white;
 	text-transform: uppercase;
 }
 
@@ -279,36 +280,41 @@ nav ul ul li a:hover {
 
 /* Get Involved */
 #getinvolved {
-	background-color: #68BD45;
+	background: url("../images/illustration1.jpg") 50% 0%/cover repeat-x;
 	padding: 15% 5%;
 	line-height: 1.75em;
 	font-size: .85em;
 }
 
 #getinvolved h2{ 
-	font-size: 1.25em;
+	font-size: 1.85em;
 	line-height: 1.75em;
+	color: #3f0a84;
+	font-weight: 800;
 	text-align: center;
-	padding: 0 0 7% 0;
+	padding: 0 0 2% 0;
 }
 
 #getinvolved a {
-	line-height: 4em;
+	line-height: 6em;
 	text-transform: uppercase;
 	font-weight: 600;
 	letter-spacing: .15em;
 	margin: 0 4%;
 }
 
-#getinvolved .column h2 {
-	background-color: #00AB66;
-	height: 4em;
+#getinvolved .column h3 {
+	background-color: #F26422; 
+/*	background-image: linear-gradient(#DA1F26, #F26422); */
+	height: 6em;
 	margin-top: 2em;
+	text-align: center;
+	font-size: .85em;
 }
 
 /* Participants */
 #participants {
-	background-color: #00A2A5;
+	background: #00A2A5 url("../images/participantsbackgroundpattern.jpg") 100% 10%/cover repeat-x;
 	padding: 15% 5%;
 	line-height: 1.75em;
 	font-size: .85em;
@@ -318,6 +324,7 @@ nav ul ul li a:hover {
 	padding: 0 0 7% 0;
 	line-height: 1.75em;
 	text-align: center;
+	color: white;
 }
 
 #participants h3{
@@ -326,13 +333,10 @@ nav ul ul li a:hover {
 	color: #00EDDD;
 }
 
-#participants .column{
-	background-color: #00A2A5;
-}
-
 /* Sponsors */
 #sponsors {
-	padding: 15% 5%;	
+	padding: 15% 5%;
+	background: url("../images/sponsorsbackgroundpattern.jpg") 50% 0%/cover repeat-x;	
 }
 
 #sponsors .column img{
@@ -354,16 +358,17 @@ nav ul ul li a:hover {
 }
 
 #sponsors h2 {
-	font-size: 1.25em;
+	font-size: 1.60em;
 	line-height: 1.75em;
-	color: #25064D;
+	color: #3f0a84;
+	font-weight: 800;
 	text-align: center;
 	padding: 0 0 7% 0;
 }
 
 /* footer */	
 #contact {
-	background: #25064D;
+	background: #25064D url("../images/footerbackgroundpattern.jpg") 50% 0%/cover repeat-x;
 	height: auto;
 	padding: 15% 5%;
 	text-align: center;
@@ -371,17 +376,18 @@ nav ul ul li a:hover {
 }
 
 #contact h2 {
-	padding: 0% 0% 7% 0%;
+	padding: 0;
 }
 
-#connectnav, #sharenav h3{
-	padding: 0% 0% 7% 0%;
+#contact h3{
+	padding: 9% 0% 2% 0%;
+	font-size: 1.35em;
 	color: #9d69b7;
 	text-transform: uppercase;
 }
 
 #connectnav, #sharenav ul{
-	padding: 0% 0% 7% 0%;
+	padding: 0% 0% 10% 0%;
 }
 
 #connectnav, #sharenav li{
