@@ -77,15 +77,34 @@
 }
 
 /* Our Sponsors */
+#sponsors {
+	padding: 15% 7%;
+}
+
 #sponsors .column:nth-child(even){
 	float: left;
 	height: 100px;
-	margin: 0 7%;
+	margin: 0 6.78%;
 }
 
 #sponsors .column:nth-child(odd){
 	float: left;
 	height: 100px;
-	margin: 0 7%;
+	margin: 0 6.78%;
 }
+
+/* footer */
+#connectnav li:nth-of-type(2) {
+	font-size: 1.35em;
+    line-height: 2em;
+ }
+
+ #connectnav li:nth-of-type(3) {
+	font-size: 1.35em;
+    line-height: 2em;
+ }
+
+ #sharenav {
+ 	 margin-top: 1em;
+ }
  }
