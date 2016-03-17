@@ -1,3 +1,91 @@
-@media screen and (min-width: 500px) {
-	
+@media screen and (min-width: 550px) {
+/* About */
+#about .column h1 {
+	padding-bottom: .75em;
+}
+
+#about .column p {
+	font-size: 1.35em;
+	line-height: 1.55em;
+	margin-top: 0;
+}
+
+/* Purchaseticket */
+#purchaseticket li:nth-of-type(1) {
+	font-size: 1.35em;
+	line-height: 1.55em;
+	margin-bottom: 0;
+	margin-top: 1.25em;
+}
+
+#purchaseticket li:nth-of-type(2) {
+	font-size: 1.35em;
+	line-height: 1.55em;
+	margin-bottom: 0; 
+	margin-top: 0;
+}
+
+#purchaseticket li:nth-of-type(3) {
+	font-size: 1.35em;
+	line-height: 1.55em;
+	margin-top: 0;
+	margin-bottom: 1.25em;
+}
+
+#purchaseticket li:nth-of-type(4) {
+	margin: 2em 24%;
+	width: 48%;
+}
+
+/* Schedule */
+#schedule .column {
+		margin: 0 9% 0 9%;
+		padding: 1%;
+		float:left;
+		width: 90%;
+		font-size: 1.20em;
+    	line-height: 1.55em;
+}
+
+/* Get Involved */
+#getinvolved .column h3 {
+	width: 48%;
+	float: left;
+	padding: .35%;
+	margin-left: 1%;
+	line-height: 3em;
+}
+
+#getinvolved .column:nth-of-type(3) h3{
+	width: 48%;
+	padding: .35%;
+	margin: 2em 24%;
+	line-height: 3em;
+}
+
+/* Participants */
+#participants .column {
+		margin: 0 4%;
+		padding: 1%;
+		float:left;
+		width: 25%;
+}
+
+#participants h2 {
+	font-size: 1.75em;
+	line-height: 1.55em;
+}
+
+/* Our Sponsors */
+#sponsors .column:nth-child(even){
+	float: left;
+	height: 100px;
+	margin: 0 7%;
+}
+
+#sponsors .column:nth-child(odd){
+	float: left;
+	height: 100px;
+	margin: 0 7%;
+}
  }
